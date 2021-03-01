@@ -19,6 +19,8 @@ jobs:
         run: |
           npm install 
           npm update
+          npm fund 
+          npm audit fix 
           npm run build
       - uses: actions/upload-artifact@master
         with:
