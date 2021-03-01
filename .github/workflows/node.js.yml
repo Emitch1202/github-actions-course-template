@@ -17,6 +17,8 @@ jobs:
       - uses: actions/checkout@v2
       - name: npm install and build webpack
         run: |
+          npm cache clean --force
+          npm install 
           npm update
           npm fund 
           npm audit fix --force
